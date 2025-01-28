@@ -1,0 +1,18 @@
+import random  
+
+def random_emoji():  
+    emojis = ['😀', '😂', '😍', '🤔', '😭', '😎', '😡', '🥳', '😱', '😴', '🌈', '🍕', '🚀', '🎉', '💖', '🌍']  
+    return random.choice(emojis)  
+
+def double_emoji(s):  
+    result = ''  
+    for letter in s:  
+        result += random_emoji()  # Rastgele emoji ekleme  
+    return result  
+
+def secret_emoji_function(a, b):  
+    return random_emoji()  # Rastgele emoji döndürme  
+
+print(double_emoji("Hello"))  # "Hello" yerine rastgele emojiler döndürecek  
+print(secret_emoji_function(1, 2))  # Rastgele bir emoji döndürecek  
+print(secret_emoji_function("Hello, ", "world!"))  # Rastgele bir emoji döndürecek
